@@ -1,17 +1,17 @@
 export const dummyData =
         [{
-                title: 'Texto 1', url: 'https://i.ibb.co/hYjK44F/anise-aroma-art-bazaar-277253.jpg',
+                title: 'Isolado', url: 'https://images.tcdn.com.br/img/img_prod/980978/whey_protein_isolado_900g_dux_303_1_673a42af5828532d6a5a5b8bb4fce597.jpg',
                 description: "Isso é uma breve descrição de exemplo. Aqui você pode customizar",
                 id: 1
 
         },
         {
-                title: 'Texto 2', url: 'https://i.ibb.co/JtS24qP/food-inside-bowl-1854037.jpg',
+                title: 'Concentrado', url: 'https://cdn.awsli.com.br/600x1000/409/409181/produto/35878132/b37e8a2972.jpg',
                 description: "Isso é uma breve descrição de exemplo. Aqui você pode customizar",
                 id: 2
         },
         {
-                title: 'Texto 3', url: 'https://i.ibb.co/JxykVBt/flat-lay-photography-of-vegetable-salad-on-plate-1640777.jpg',
+                title: 'Whey Protein', url: 'https://a-static.mlcdn.com.br/800x560/whey-protein-concentrado-isolado-e-hidrolisado-probiotica-900g-baunilha/magazineluiza/231366300/d4a8949b89f7a2095e8223c68cae147a.jpg',
                 description: "Isso é uma breve descrição de exemplo. Aqui você pode customizar",
                 id: 3
         }]

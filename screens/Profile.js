@@ -8,8 +8,8 @@ const Profile = (props) => {
 
     const { _id, name, fuction, weight, price, type, benefits } = props.route.params.item
     const deleteEmploye = () => {
-        fetch("http://10.0.0.19:3000/delete", {
-            method: "post",
+        fetch("http://192.168.1.4:3000/delete", {
+            method: "delete",
             headers: {
                 'Content-Type': 'application/json'
             },

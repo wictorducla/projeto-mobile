@@ -16,7 +16,7 @@ const Home = ({ navigation, route }) => {
   console.log(data, loading);
 
   const fetchData = () => {
-    fetch('http://10.0.0.19:3000/')
+    fetch('http://192.168.1.4:3000/')
       .then((res) => res.json())
       .then((results) => {
         // setData(results)
@@ -41,7 +41,7 @@ const Home = ({ navigation, route }) => {
       >
         <View style={styles.cardView}>
           <Image
-            style={{ width: 60, height: 60, borderRadius: 30 }}
+            style={{ width: 80, height: 60, borderRadius: 30 }}
             source={{ uri: item.fuction }}
           />
           <View style={{ marginLeft: 10 }}>
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
   },
   cardView: {
     flexDirection: 'row',
-    padding: 6,
+    padding: 8,
   },
   text: {
     fontSize: 18,

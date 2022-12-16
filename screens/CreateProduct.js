@@ -42,7 +42,7 @@ const CreateProduct = ({ navigation, route }) => {
   const [enableshift, setenableShift] = useState(false);
 
   const submitData = () => {
-    fetch('http://10.0.0.19:3000/send-data', {
+    fetch('http://192.168.1.4:3000/send-data', {
       method: 'post',
       headers: {
         'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ const CreateProduct = ({ navigation, route }) => {
   };
 
   const updateDetails = () => {
-    fetch('http://10.0.0.19:3000/update', {
+    fetch('http://192.168.1.4:3000/update', {
       method: 'put',
       headers: {
         'Content-Type': 'application/json',
@@ -178,7 +178,7 @@ const CreateProduct = ({ navigation, route }) => {
           theme={theme}
           onFocus={() => setenableShift(false)}
           mode="outlined"
-          onChangeText={(text) => setEmail(text)}
+          onChangeText={(text) => setType(text)}
         />
         <TextInput
           label="Peso"
@@ -188,7 +188,7 @@ const CreateProduct = ({ navigation, route }) => {
           onFocus={() => setenableShift(false)}
           keyboardType="number-pad"
           mode="outlined"
-          onChangeText={(text) => setPhone(text)}
+          onChangeText={(text) => setWeight(text)}
         />
 
         <TextInput
@@ -198,7 +198,7 @@ const CreateProduct = ({ navigation, route }) => {
           theme={theme}
           onFocus={() => setenableShift(true)}
           mode="outlined"
-          onChangeText={(text) => setSalary(text)}
+          onChangeText={(text) => setPrice(text)}
         />
         <TextInput
           label="Beneficios"
@@ -207,7 +207,7 @@ const CreateProduct = ({ navigation, route }) => {
           theme={theme}
           onFocus={() => setenableShift(true)}
           mode="outlined"
-          onChangeText={(text) => setPosition(text)}
+          onChangeText={(text) => setBenefits(text)}
         />
         <Button
           style={styles.inputStyle}
@@ -299,6 +299,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     padding: 10,
+    paddingTop: 150,
   },
 });
 
